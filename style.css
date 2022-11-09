@@ -17,19 +17,24 @@ body {
     min-height: 100vh;
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
     background-color: var(--vpBlue);
+    background-image: url(./images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
-    background-position: bottom;   
+    background-position: right top;
+    background-size: 100%;
 }
 
 .card {
     width: 350px;
+    margin-top: 10vh;
+    margin: 10vh auto auto;
     overflow: hidden;
     border-radius: 20px;
-text-align: center;
-background-color: white;
+    text-align: center;
+    background-color: white;
+    color: var(--dBlue);
+    height: auto;
 }
 
 img {
@@ -39,7 +44,7 @@ img {
 
 .text {
     width: 90%;
-    margin: 2rem auto;
+    margin: 2.5rem auto;
 }
 
 h1 {
@@ -56,7 +61,7 @@ font-size: 1.5rem;
 .plan {
     background-color: var(--vpBlue);
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -70,7 +75,7 @@ font-size: 1.5rem;
 }
 
 .annualPlan img {
-    height: 100%;
+    height: auto;
 }
 
 .description {
@@ -92,6 +97,11 @@ color: var(--bBlue);
 font-weight: 700;
 }
 
+.plan a:hover {
+    text-decoration: none;
+    color: var(--desatBlue);
+}
+
 .proceedPayment {
     width: 100%;
     margin: 1.5rem auto;
@@ -102,15 +112,44 @@ font-weight: 700;
     padding: 1rem;
     font-weight: 900;
     box-shadow: 0px 5px 20px var(--desatBlue);
+    cursor: pointer;
+}
+
+.proceedPayment:hover {
+    background-color: hsla(245, 75%, 52%, 0.7);
 }
 
 .cancelOrder {
     text-decoration: none;
     color: var(--desatBlue);
     font-weight: 700;
+    font-size: 0.8em;
+}
+
+.cancelOrder:hover {
+    color: var(--dBlue);
 }
 
 .attribution {
     position: absolute;
     bottom: 1%;
+}
+
+@media (min-width:800px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+
+    .card {
+        width: 400px;
+        margin: auto;
+    }
+
+    img {
+        height: 12rem;
+    }
+
+    .text {
+        width: 80%;
+    }
 }
