@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hot Display', sans-serif;
+}
+
+:root {
+    --pBlue: hsl(225,100%, 94%);
+    --bBlue: hsl(245, 75%, 52%);
+    --vpBlue: hsl(225, 100%, 98%);
+    --desatBlue: hsl(224, 23%, 55%);
+    --dBlue: hsl(223, 47%, 23%);
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--vpBlue);
+    background-repeat: no-repeat;
+    background-position: bottom;   
+}
+
+.card {
+    width: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+text-align: center;
+background-color: white;
+}
+
+img {
+    height: 10rem;
+    width: 100%;
+}
+
+.text {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+h1 {
+font-size: 1.5rem;
+}
+
+.mainPara {
+    margin: 1.5rem auto;
+    color: var(--desatBlue);
+    max-width: 30ch;
+    line-height: 1.7em;
+}
+
+.plan {
+    background-color: var(--vpBlue);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+
+.annualPlan {
+    display: flex;
+    align-items: center;
+}
+
+.annualPlan img {
+    height: 100%;
+}
+
+.description {
+    margin: 0 1rem;
+    white-space: nowrap;
+    line-height: 1.5em;
+}
+
+.planName {
+    font-weight: 700;
+}
+
+.planPrice {
+    color: var(--desatBlue);
+}
+
+.plan a {
+color: var(--bBlue);
+font-weight: 700;
+}
+
+.proceedPayment {
+    width: 100%;
+    margin: 1.5rem auto;
+    background-color: var(--bBlue);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: 900;
+    box-shadow: 0px 5px 20px var(--desatBlue);
+}
+
+.cancelOrder {
+    text-decoration: none;
+    color: var(--desatBlue);
+    font-weight: 700;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 1%;
+}
