@@ -23,6 +23,7 @@ body {
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 100%;
+    background-color: var(--vpBlue);
 }
 
 .card {
