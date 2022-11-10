@@ -55,7 +55,7 @@ font-size: 1.5rem;
 .mainPara {
     margin: 1.5rem auto;
     color: var(--desatBlue);
-    max-width: 30ch;
+    max-width: 35ch;
     line-height: 1.7em;
 }
 
@@ -67,7 +67,7 @@ font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .annualPlan {
@@ -96,6 +96,7 @@ font-size: 1.5rem;
 .plan a {
 color: var(--bBlue);
 font-weight: 700;
+font-size: 0.8em;
 }
 
 .plan a:hover {
